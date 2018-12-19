@@ -1,9 +1,9 @@
 
-/*body {*/
-    /*background-image: url(../img/background-2.jpg);*/
-    /*background-image: url(../img/background-1.jpg);*/
+body {
+    margin: 0;
+    background-image: url(../img/background.jpg);
 
-/*}*/
+}
 
 .grid {
     display: grid;
@@ -12,7 +12,7 @@
 
 .header {
     grid-template-columns: 80% 20%;
-    border: aquamarine solid 1px;
+    background-color: lightpink;
 }
 
 
@@ -29,23 +29,128 @@
 
 .content {
     min-height: 500px;
-
     grid-template-columns: 1fr 1fr;
 }
 
 article {
+    padding: 20px 0;
+    text-align: center;
     border: rgba(0, 0, 0, 0.1) solid 1px;
     border-radius: 5px;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 1);
+    background-color: rgba(245, 245, 220, 0.9);
+
 }
+
+/* Start styles for the headline of the article*/
+h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    letter-spacing: 1px;
+    max-width: 320px;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    color: #465457;
+}
+
+.headline h1 {
+    display: table;
+    width: auto;
+    margin: 15px auto;
+    letter-spacing: 2px;
+}
+
+.headline h1:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    left: -35px;
+    width: 10px;
+    height: 10px;
+    border: 3px solid #fed57b;
+    transform: rotate(45deg);
+}
+
+.headline h1:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    right: -35px;
+    width: 10px;
+    height: 10px;
+    border: 3px solid #fed57b;
+    transform: rotate(45deg);
+}
+
+/*End*/
+
+/*Start styles for button*/
+.border-btn {
+    display: inline-block;
+    position: relative;
+    padding: 10px 25px;
+    margin-right: 20px;
+    background: #FFF9F1;
+    text-decoration: none;
+    font-family: 'Marck Script', cursive;
+    letter-spacing: 1px;
+    border-width: 6px;
+    border-style: double;
+    transition: .5s;
+}
+
+.color-two {
+    border-color: #F3755F;
+    color: #D7C98C;
+}
+
+.border-btn:before,
+.border-btn:after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 2px;
+    transform: rotate(-45deg);
+    transition: .5s;
+}
+
+.color-two:before, .color-two:after {
+    background: #F3755F;
+}
+
+.border-btn:before {
+    left: -3px;
+    top: 3px;
+}
+
+.border-btn:after {
+    right: -3px;
+    bottom: 3px;
+}
+
+.color-two:hover {
+    background: #F3755F;
+    border-color: #8FD4DB;
+}
+
+.color-two:hover:before, .color-two:hover:after {
+    background: #8FD4DB;
+}
+
+
+/*End*/
 
 .sidebar {
     min-height: 500px;
     border: rgba(0, 0, 0, 0.1) solid 1px;
     border-radius: 5px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    background-color: rgba(245, 245, 220, 0.9);
 }
 
 .footer {
-    border: aquamarine solid 1px;
+    background-color: coral;
 }
