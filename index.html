@@ -14,7 +14,7 @@
         <nav>
             <a href="#">Войти</a>
             <!--<span class="separator"></span>-->
-            <a href="#">Регистрация</a>
+            <a href="#openModal">Регистрация</a>
         </nav>
     </header>
 
@@ -27,7 +27,7 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad debitis explicabo facilis fugiat illo
                     iste, maiores molestias necessitatibus nulla, quis, sapiente sunt tempore velit? Aut ex mollitia
                     necessitatibus officia ullam.</p>
-                <a href="" class="border-btn color-two">Читать далее</a>
+                <a href="#" class="border-btn color-two">Читать далее</a>
             </article>
 
             <article class="headline">
@@ -37,7 +37,7 @@
                     blanditiis distinctio est explicabo illo, laudantium necessitatibus nihil nostrum odit pariatur
                     rerum sequi veritatis! Cumque, dignissimos dolorum mollitia nam perferendis quo reprehenderit
                     tempora.</p>
-                <a href="" class="border-btn color-two">Читать далее</a>
+                <a href="#" class="border-btn color-two">Читать далее</a>
             </article>
 
             <article class="headline">
@@ -50,10 +50,10 @@
                     dolor dolores eaque eos numquam omnis, tempora! Dolore ex iusto recusandae! Architecto assumenda
                     corporis cupiditate dicta dolorem ducimus impedit in ipsa libero, maiores minima molestiae molestias
                     officia possimus, qui soluta sunt veniam vero.</p>
-                <a href="" class="border-btn color-two">Читать далее</a>
+                <a href="#" class="border-btn color-two">Читать далее</a>
             </article>
             <article class="headline">
-                <h1>Заголовок статьи #4</h1>
+                <h1 class="">Заголовок статьи #4</h1>
                 <hr>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, culpa ea illum nulla officia quam
                     ratione ut voluptatum? Accusantium, at ea hic impedit iste labore modi neque, quis quisquam quo quos
@@ -62,22 +62,36 @@
                     dolor dolores eaque eos numquam omnis, tempora! Dolore ex iusto recusandae! Architecto assumenda
                     corporis cupiditate dicta dolorem ducimus impedit in ipsa libero, maiores minima molestiae molestias
                     officia possimus, qui soluta sunt veniam vero.</p>
-                <a href="" class="border-btn color-two">Читать далее</a>
+                <a href="#" class="border-btn color-two">Читать далее</a>
             </article>
         </main>
 
         <aside class="sidebar">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, corporis dignissimos dolores earum
+            <p>Lofddfrem ipsum dolor sit amet, consectetur adipisicing elit. Alias amet, corporis dignissimos dolores
+                earum
                 eius
                 ex ipsa itaque maiores numquam odio odit officiis, vitae. Ad impedit mollitia quisquam ut vero!</p>
         </aside>
     </div>
     <footer class="footer">
 
-        <p> Copyright 2019 Alex Dodoka</p>
+        <p> Copyright 2019 Alex Dodoka.</p>
+        <p> Design by Anatoly Martynenko.</p>
+        <p> Back-end by Dmitry Krasavin.</p>
     </footer>
-
 </div>
+
+<!--Registration PopUp-->
+<div id="openModal" class=" modalDialog">
+    <form class=" sign-up">
+        <a href="#close" title="Close" class="close">X</a>
+        <h1 class="sign-up-title">Sign Up</h1>
+        <input type="text" class="sign-up-input" placeholder="What's your username?" autofocus>
+        <input type="password" class="sign-up-input" placeholder="Choose a password">
+        <input type="submit" value="Sign me up!" class="sign-up-button">
+    </form>
+</div>
+<!---->
 </body>
 <script src="src/app/main.js"></script>
 </html>
