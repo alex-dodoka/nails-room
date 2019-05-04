@@ -152,7 +152,16 @@ h1 {
 }
 
 .footer {
-    background-color: coral;
+    background-color: gray;
+    color: white;
+}
+
+.google-map {
+    height: 500px;
+    width: 500px;
+    margin-top: 10px;
+    justify-self: center;
+    color: black;
 }
 
 /*Styles for registratuon PopUp*/
@@ -335,4 +344,5 @@ input {
     border: 0;
     padding: 0;
 }
+
 /*End*/

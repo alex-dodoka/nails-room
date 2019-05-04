@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Nails Room</title>
     <link rel="stylesheet" href="src/assets/css/custom-styles.css">
+
 </head>
 
 <body>
@@ -73,8 +74,8 @@
                 ex ipsa itaque maiores numquam odio odit officiis, vitae. Ad impedit mollitia quisquam ut vero!</p>
         </aside>
     </div>
-    <footer class="footer">
-
+    <footer class="footer grid">
+        <div id="map" class="google-map"></div>
         <p> Copyright 2019 Alex Dodoka.</p>
         <p> Design by Anatoly Martynenko.</p>
         <p> Back-end by Dmitry Krasavin.</p>
@@ -92,7 +93,13 @@
     </form>
 </div>
 <!---->
-</body>
+
+
 <script src="src/app/main.js"></script>
+<script src="src/app/google-map-api.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDtfi__RDqQ_ikfg0QwreaRy34yAiG3Cwg&callback=initMap"
+        async defer></script>
+</body>
+
 </html>
 
